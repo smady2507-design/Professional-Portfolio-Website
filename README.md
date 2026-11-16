@@ -1,11 +1,47 @@
-<div align="center">
+# Sumana Dey — Executive Portfolio
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Responsive executive portfolio website for **Sumana Dey**, Business Transformation & Operations Leader with 25+ years of cross-functional leadership across E-Commerce, Retail, BFSI, Telecom, and Global Shared Services.
 
-  <h1>Built with AI Studio</h2>
+Built with **React 19**, **TypeScript**, **Tailwind CSS v4**, and **Vite**, configured for zero-friction GitHub integration and Vercel deployment.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Local Development
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+```bash
+# Install dependencies
+npm install
 
-</div>
+# Start development server on port 3000
+npm run dev
+
+# Typecheck and build production bundle
+npm run lint
+npm run build
+```
+
+## Integrating with GitHub
+
+```bash
+git init
+git add .
+git commit -m "feat: initial executive portfolio website"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git push -u origin main
+```
+
+## Deploying to Vercel
+
+### Option 1: Vercel GitHub Integration (Recommended)
+1. Push this repository to GitHub.
+2. Open [vercel.com/new](https://vercel.com/new) and import your GitHub repository.
+3. Vercel automatically detects **Vite** via `vercel.json`:
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+4. Click **Deploy**. Every push to `main` will trigger an automatic production deployment, and pull requests will generate preview URLs.
+
+### Option 2: Vercel CLI
+```bash
+npm i -g vercel
+vercel
+vercel --prod
+```
